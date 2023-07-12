@@ -1,13 +1,19 @@
-const express = require("express");
+// const express = require("express");
 
-const app = express();
+// const app = express();
 
 
-const PORT = 8004;
+// const PORT = 8004;
 
-app.listen(PORT, () => {
-  console.log(`Database service on PORT ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Database service on PORT ${PORT}`);
+// });
+
+const server = require("./src/server");
+server.listen(8004, () => {
+    console.log('Database service on PORT 8004');
+  });
+
 
 //------------------------------------------------------------------------------
 // const { Planet } = require("./src/database");

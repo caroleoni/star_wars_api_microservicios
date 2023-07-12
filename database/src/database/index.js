@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
-const { MONGO_URI } = require("../config/envs.js");
+const { MONGO_URL } = require("../config/envs.js");
 
 //mongodb+srv://<username>:<password>@cluster0.uvy4oqo.mongodb.net/
-const conn = mongoose.createConnection(MONGO_URI);
+const conn = mongoose.createConnection(MONGO_URL);
 
 //Aca tenemos definido el modelo del personaje
 // const Character = conn.model("Character", require("./schemas/characterSchema"));
