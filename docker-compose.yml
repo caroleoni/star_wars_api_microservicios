@@ -8,34 +8,30 @@ services:
     ports: 
       - "8000:8000"
 
-characters:
-  gateway:
+  characters:
     container_name: characters
     restart: always
     build: ./characters
     ports: 
-      - ":8001"
+      - "8001:8001"
 
-films:
-  gateway:
+  films:
     container_name: films
     restart: always
     build: ./films
     ports: 
-      - ":8002"
+      - "8002:8002"
 
-planets:
-  gateway:
+  planets:
     container_name: planets
     restart: always
     build: ./planets
     ports: 
-      - ":8003"            
+      - "8003:8003"            
 
-database:
-  gateway:
+  database:
     container_name: database
     restart: always
     build: ./database
     ports: 
-      - ":8004"
+      - "8004:8004"
