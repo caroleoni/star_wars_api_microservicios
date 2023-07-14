@@ -3,7 +3,7 @@ const {response} = require('../utils')
 
 module.exports = async (req, res) => {
     const characters = await Character.list();
-    response(res, 200, characters);
+    response(res, 200, characters.data);
     // res.status(200).json(characters);
     
 };
